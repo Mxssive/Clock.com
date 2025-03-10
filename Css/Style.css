@@ -1,13 +1,47 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
 body {
 
     height:100vh;
+    width: 100vw;
     background-color:#3B5A29;
+}
+
+nav{ 
+height:5% ;
+width: 100%;
+
+
 }
 
 .navbar{
 background-color: #3B5A29;
-padding-right: 15px;
-padding-left: 15px;
+
 }
 .navbar{
 
@@ -30,11 +64,21 @@ li{
 }
 
 li a{
-color: rgb(167, 25, 25);
+color: #F0F4E7;
 font-size: 18px;
 font-weight: bold;
 margin-right: 25px;
+text-decoration: none;
+margin-left: 35px;
 }
+
+.merriweather-rubrik {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+  }
+  
 
 button{
 background-color: black;
@@ -50,7 +94,45 @@ font-weight: bold;
 font-size: 15px;
 }
 
-#logga{
+#line {
+background-color: #F0F4E7;
+height: 0.1%;
+width: 100%;
+
+
+}
+
+#Logga{
+text-align: center;
+height: 65%;
+
+}
+
+.footer { 
+    height: 29.9%;
+    display: flex;
+    background-color: #F0F4E7;
+    align-items: stretch;
+    
+}
+
+#Ett {
+width: 25%;
 text-align: center;
 
+}
+
+#Två {
+    width: 25%;
+    text-align: center;
+}
+
+#Tre {
+    width: 25%;
+    text-align: center;
+}
+
+#Fyra {
+width: 25%;    
+text-align: center;
 }
