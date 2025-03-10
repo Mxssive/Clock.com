@@ -1,4 +1,56 @@
 body {
 
-    color: green;
+    height:100vh;
+    background-color:#3B5A29;
+}
+
+.navbar{
+background-color: #3B5A29;
+padding-right: 15px;
+padding-left: 15px;
+}
+.navbar{
+
+    background-color: #3B5A29;
+
+Display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+#logo a {
+font-size: 35px;
+font-weight: 600;
+color: white;
+}
+
+li{
+   list-style: none;
+   display: inline-block;
+}
+
+li a{
+color: rgb(167, 25, 25);
+font-size: 18px;
+font-weight: bold;
+margin-right: 25px;
+}
+
+button{
+background-color: black;
+margin-left: 10px;
+border-radius: 10px;
+padding: 10px;
+width: 90px;
+}
+
+button a{
+color: white;
+font-weight: bold;
+font-size: 15px;
+}
+
+#logga{
+text-align: center;
+
 }
