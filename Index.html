@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/Style.css">     
+    <link rel="stylesheet" href="Css/Style.css">   
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
- 
+   
     <nav class="navbar"> 
         <div class="navdiv merriweather-rubrik">
         <ul>
-         <li> <a href="#"> Home </a></li>
-         <li> <a href="#"> About </a></li>
-         <li> <a href="#"> Contact </a></li>
+         <li>
+            <button id="menuButton" type="button" class="menu-button" aria-labelledby="menuButtonLabel">
+                <span class="menu-button__line">
+                  <span id="menuButtonLabel" style="display: none">Menu Button</span>
+                </span>
+              </button>
+
+         </li>
+         
             
         </ul>
        
@@ -28,7 +34,10 @@
     <div id="line">     </div>
 
 
-    <div id="Logga" class="merriweather-rubrik>"> AETHERIUM</div>
+    <div id="Logga" class="merriweather-rubrik>">
+        <img src="bilder/Logga.png" alt="Logga">
+    </div>
+    
 
     <div class="footer">
         <div id="Ett">Social media</div>
@@ -37,7 +46,26 @@
         <div id="Fyra">Resources</div>
       </div>
     
+<script>
 
+const menuButton = document.getElementById("menuButton");
+let isMenuOpened = false;
+
+function toggleMenu() {
+  isMenuOpened = !isMenuOpened;
+  if (isMenuOpened) {
+    // Code to be executed when the menu is opened
+    menuButton.classList.add("is-opened");
+  } else {
+    // Code to be executed when the menu is closed
+    menuButton.classList.remove("is-opened");
+  }
+}
+
+menuButton.addEventListener("click", toggleMenu);
+
+
+</script>
 
 
 </body>

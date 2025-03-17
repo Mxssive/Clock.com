@@ -33,7 +33,7 @@ body {
 }
 
 nav{ 
-height:5% ;
+height:10% ;
 width: 100%;
 
 
@@ -80,13 +80,7 @@ margin-left: 35px;
   }
   
 
-button{
-background-color: black;
-margin-left: 10px;
-border-radius: 10px;
-padding: 10px;
-width: 90px;
-}
+
 
 button a{
 color: white;
@@ -104,12 +98,12 @@ width: 100%;
 
 #Logga{
 text-align: center;
-height: 65%;
+height: 83%;
 
 }
 
 .footer { 
-    height: 29.9%;
+    height: 40.9%;
     display: flex;
     background-color: #F0F4E7;
     align-items: stretch;
@@ -136,3 +130,40 @@ text-align: center;
 width: 25%;    
 text-align: center;
 }
+
+
+
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 6px;
+    background-color: #3B5A29;
+    border: 0;
+    position: absolute;
+    left:20px;
+    top: 20px;
+  }
+  
+  .menu-button__line,
+  .menu-button::before,
+  .menu-button::after {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background-color:#F0F4E7;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .menu-button.is-opened .menu-button__line {
+    opacity: 0;
+  }
+  
+  .menu-button.is-opened::before {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-button.is-opened::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
