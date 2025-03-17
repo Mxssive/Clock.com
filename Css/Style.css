@@ -27,8 +27,8 @@ time, mark, audio, video {
 
 body {
 
-    height:100vh;
-    width: 100vw;
+    height:150vh;
+    width: 98vw;
     background-color:#3B5A29;
 }
 
@@ -40,14 +40,10 @@ width: 100%;
 }
 
 .navbar{
-background-color: #3B5A29;
-
-}
-.navbar{
 
     background-color: #3B5A29;
 
-Display: flex;
+display: flex;
 align-items: center;
 justify-content: space-between;
 }
@@ -67,7 +63,7 @@ li a{
 color: #F0F4E7;
 font-size: 18px;
 font-weight: bold;
-margin-right: 25px;
+margin-right:25px;
 text-decoration: none;
 margin-left: 35px;
 }
