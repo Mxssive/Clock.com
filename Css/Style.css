@@ -16,12 +16,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 
@@ -162,4 +162,37 @@ text-align: center;
   
   .menu-button.is-opened::after {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #panel {
+
+    padding: 50px;
+    
+    background-color: white;
+    height: 350px;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: larger;
+    
+    display: flex;
+    max-width: min-content;
+    padding-top: 70px;
+    flex-direction: column;
+    gap: 20px;
+   
+    display: none;
+
+  }
+  a{
+    
+    text-decoration: none;
+    color: #3B5A29;
+    font-weight: bold;
+    line-height: 40px;
+    font-style:arial;
   }

@@ -26,7 +26,16 @@
             
         </ul>
        
-
+        <div id="panel">
+            
+            <a href="">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+            <a href="">FAQ</a>
+            <a href="">Privacy Policy</a>
+        </div>
         </div>
        
 
@@ -46,10 +55,13 @@
         <div id="Tre">Explore</div>
         <div id="Fyra">Resources</div>
       </div>
-    
+      
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
 <script>
 
 const menuButton = document.getElementById("menuButton");
+
 let isMenuOpened = false;
 
 function toggleMenu() {
@@ -57,9 +69,17 @@ function toggleMenu() {
   if (isMenuOpened) {
     // Code to be executed when the menu is opened
     menuButton.classList.add("is-opened");
+
+    $("#panel").slideToggle("slow");
+
+
+
+
   } else {
     // Code to be executed when the menu is closed
     menuButton.classList.remove("is-opened");
+    $("#panel").slideToggle("slow");
+
   }
 }
 
