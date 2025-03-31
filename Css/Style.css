@@ -33,7 +33,7 @@ body {
 }
 
 nav{ 
-height:10% ;
+height:65px ;
 width: 100%;
 
 
@@ -98,74 +98,109 @@ height: 83%;
 
 }
 
-.footer { 
-    height: 40.9%;
-    display: flex;
-    background-color: #F0F4E7;
-    align-items: stretch;
-    
+.wide {
+  grid-column: span 2;
 }
 
-#Ett {
-width: 25%;
-text-align: center;
-
+footer {
+  background-color: #F0F4E7;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-#Två {
-    width: 25%;
-    text-align: center;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#Tre {
-    width: 25%;
-    text-align: center;
+.social-icons img {
+  width: 20px;
+  margin: 5px;
 }
 
-#Fyra {
-width: 25%;    
-text-align: center;
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
 }
 
-
+.column ul {
+  list-style: none;
+  padding: 0;
+}
 
 .menu-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 6px;
-    background-color: #3B5A29;
-    border: 0;
-    position: absolute;
-    left:50px;
-    top: 40px;
-  }
-  
-  .menu-button__line,
-  .menu-button::before,
-  .menu-button::after {
-    content: "";
-    width: 28px;
-    height: 2px;
-    background-color:#F0F4E7;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-  
-  .menu-button.is-opened .menu-button__line {
-    opacity: 0;
-  }
-  
-  .menu-button.is-opened::before {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  .menu-button.is-opened::after {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  background-color: #3B5A29;
+  border: 0;
+  position: absolute;
+  left:20px;
+  top: 20px;
+}
 
+.menu-button__line,
+.menu-button::before,
+.menu-button::after {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background-color:#F0F4E7;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-button.is-opened .menu-button__line {
+  opacity: 0;
+}
+
+.menu-button.is-opened::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.is-opened::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#panel {
+
+  padding: 50px;
+  
+  background-color: white;
+  height: 350px;
+  width: 150px;
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-size: larger;
+  
+  display: flex;
+  max-width: min-content;
+  padding-top: 70px;
+  flex-direction: column;
+  gap: 20px;
+
+  display: none;
+
+}
+a{
+  
+  text-decoration: none;
+  color: #3B5A29;
+  font-weight: bold;
+  line-height: 40px;
+  font-style:arial;
+}
 .checkout{
  position: absolute;
  right: 50px;
- top: 40px;
+ top: 20px;
 }

@@ -14,6 +14,8 @@
     <nav class="navbar"> 
         <div class="navdiv merriweather-rubrik">
         <ul>
+
+
          <li>
             <button id="menuButton" type="button" class="menu-button" aria-labelledby="menuButtonLabel">
                 <span class="menu-button__line">
@@ -22,6 +24,18 @@
               </button>
          </li>
         </ul>
+
+        <div id="panel">
+            
+          <a href="">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">FAQ</a>
+          <a href="">Privacy Policy</a>
+      </div>
+
         <div class="checkout">
           <img src="Bilder/checklist.png" alt="checkout">
         </div>
@@ -38,34 +52,85 @@
         <img src="bilder/Logga.png" alt="Logga">
     </div>
     
-  
-    <div class="footer">
-        <div id="Ett">Social media</div>
-        <div id="Två">Use Cases</div>
-        <div id="Tre">Explore</div>
-        <div id="Fyra">Resources</div>
+    <footer>
+      <div class="footer-content">
+          <div class="social-icons">
+              <img src="Bilder/x.png" alt="X">
+              <img src="Bilder/instagram.png" alt="Instagram">
+              <img src="Bilder/youtube.png" alt="YouTube">
+              <img src="Bilder/linkedin.png" alt="LinkedIn">
+          </div>
+          <div class="footer-links">
+              <div class="column">
+                  <h3>Use cases</h3>
+                  <ul>
+                      <li>UI design</li>
+                      <li>UX design</li>
+                      <li>Wireframing</li>
+                      <li>Diagramming</li>
+                      <li>Brainstorming</li>
+                      <li>Online whiteboard</li>
+                      <li>Team collaboration</li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h3>Explore</h3>
+                  <ul>
+                      <li>Design</li>
+                      <li>Prototyping</li>
+                      <li>Development features</li>
+                      <li>Design systems</li>
+                      <li>Collaboration features</li>
+                      <li>Design process</li>
+                      <li>FigJam</li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h3>Resources</h3>
+                  <ul>
+                      <li>Blog</li>
+                      <li>Best practices</li>
+                      <li>Colors</li>
+                      <li>Color wheel</li>
+                      <li>Support</li>
+                      <li>Developers</li>
+                      <li>Resource library</li>
+                  </ul>
+              </div>
+          </div>
       </div>
+  </footer>
     
-<script>
-
-const menuButton = document.getElementById("menuButton");
-let isMenuOpened = false;
-
-function toggleMenu() {
-  isMenuOpened = !isMenuOpened;
-  if (isMenuOpened) {
-    // Code to be executed when the menu is opened
-    menuButton.classList.add("is-opened");
-  } else {
-    // Code to be executed when the menu is closed
-    menuButton.classList.remove("is-opened");
-  }
-}
-
-menuButton.addEventListener("click", toggleMenu);
-
-
-</script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+      <script>
+      
+      const menuButton = document.getElementById("menuButton");
+      
+      let isMenuOpened = false;
+      
+      function toggleMenu() {
+        isMenuOpened = !isMenuOpened;
+        if (isMenuOpened) {
+          // Code to be executed when the menu is opened
+          menuButton.classList.add("is-opened");
+      
+          $("#panel").slideToggle("slow");
+      
+      
+      
+      
+        } else {
+          // Code to be executed when the menu is closed
+          menuButton.classList.remove("is-opened");
+          $("#panel").slideToggle("slow");
+      
+        }
+      }
+      
+      menuButton.addEventListener("click", toggleMenu);
+      
+      
+      </script>
 
 
 </body>

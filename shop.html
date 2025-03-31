@@ -8,7 +8,39 @@
 </head>
 <body>
     <header>
-        <img src="bilder/logga.png" alt="Aetherium Logo" class="logo">
+        <nav class="navbar"> 
+            <div class="navdiv merriweather-rubrik">
+            <ul>
+    
+    
+             <li>
+                <button id="menuButton" type="button" class="menu-button" aria-labelledby="menuButtonLabel">
+                    <span class="menu-button__line">
+                      <span id="menuButtonLabel" style="display: none">Menu Button</span>
+                    </span>
+                  </button>
+             </li>
+            </ul>
+    
+            <div id="panel">
+                
+              <a href="Index.html">Home</a>
+              <a href="shop.html">Shop</a>
+              <a href="">About</a>
+              <a href="">Contact</a>
+              <a href="">Blog</a>
+              <a href="">FAQ</a>
+              <a href="">Privacy Policy</a>
+          </div>
+    
+            <div class="checkout">
+              <img src="Bilder/checklist.png" alt="checkout">
+            </div>
+    
+            </div>
+           
+    
+        </nav>
     </header>
     <main>
         <div class="product-grid">
@@ -92,5 +124,36 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+      <script>
+      
+      const menuButton = document.getElementById("menuButton");
+      
+      let isMenuOpened = false;
+      
+      function toggleMenu() {
+        isMenuOpened = !isMenuOpened;
+        if (isMenuOpened) {
+          // Code to be executed when the menu is opened
+          menuButton.classList.add("is-opened");
+      
+          $("#panel").slideToggle("slow");
+      
+      
+      
+      
+        } else {
+          // Code to be executed when the menu is closed
+          menuButton.classList.remove("is-opened");
+          $("#panel").slideToggle("slow");
+      
+        }
+      }
+      
+      menuButton.addEventListener("click", toggleMenu);
+      
+      
+      </script>
 </body>
 </html>
