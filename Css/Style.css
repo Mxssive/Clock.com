@@ -54,10 +54,7 @@ font-weight: 600;
 color: white;
 }
 
-li{
-   list-style: none;
-   display: inline-block;
-}
+
 
 li a{
 color: #F0F4E7;
@@ -107,6 +104,7 @@ footer {
   padding: 30px;
   text-align: center;
   border-radius: 10px;
+  font-family: Arial, sans-serif;
 }
 
 .footer-content {
